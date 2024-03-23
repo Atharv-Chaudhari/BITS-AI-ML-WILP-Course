@@ -16,7 +16,7 @@ jobs:
     - name: Check if branch is allowed
       run: |
         branch_name="${GITHUB_HEAD_REF##*/}"
-        if [[ "$branch_name" == "main" || "$branch_name" == "master" || "$branch_name" == "develop" ] || "$branch_name" == "Atharv" ]|| "$branch_name" == "dump_files_atharv" ]]; then
+        if [[ "$branch_name" == "main" || "$branch_name" == "master" || "$branch_name" == "develop" || "$branch_name" == "Atharv" || "$branch_name" == "dump_files_atharv" ]]; then
           echo "Branch $branch_name is not allowed for direct merging into Full_Course."
           exit 1
         else
