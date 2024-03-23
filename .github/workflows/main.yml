@@ -25,7 +25,7 @@ jobs:
         
     - name: Check if PR is raised against allowed branches
       run: |
-        pr_branch_name="${GITHUB_REF##*/}"
+        pr_branch_name="${GITHUB_BASE_REF}" 
         if [[ "$pr_branch_name" == "main" || "$pr_branch_name" == "master" || "$pr_branch_name" == "develop" ]]; then
           echo "Pull request is raised against disallowed branch $pr_branch_name."
           exit 1
