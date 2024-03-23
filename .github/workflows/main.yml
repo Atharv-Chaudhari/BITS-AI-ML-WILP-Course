@@ -15,7 +15,7 @@ jobs:
       
     - name: Check if branch is allowed
       run: |
-        branch_name="${GITHUB_HEAD_REF##*/}"
+        branch_name="${GITHUB_BASE_REF}"
         if [[ "$branch_name" == "main" || "$branch_name" == "master" || "$branch_name" == "develop" || "$branch_name" == "Atharv" || "$branch_name" == "dump_files_atharv" ]]; then
           echo "Branch $branch_name is not allowed for direct merging into Full_Course."
           exit 1
@@ -25,7 +25,7 @@ jobs:
         
     - name: Check if PR is raised against allowed branches
       run: |
-        pr_branch_name="${GITHUB_REF##*/}"
+        pr_branch_name="${GITHUB_HEAD_REF##*/}"
         if [[ "$pr_branch_name" == "main" || "$pr_branch_name" == "master" || "$pr_branch_name" == "develop" ]]; then
           echo "Pull request is raised against disallowed branch $pr_branch_name."
           exit 1
