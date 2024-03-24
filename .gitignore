@@ -6,3 +6,6 @@ full_course
 package-lock.json
 package.json
 node_modules
+run.bat
+deploy.bat
+git_notes.txt

@@ -15,7 +15,7 @@ jobs:
       
     - name: Check if branch is allowed
       run: |
-        disallowed_branches=("main" "master" "develop" "Atharv" "dump_files_atharv")
+        disallowed_branches=("main" "master" "develop" "Atharv" "dump_files_atharv" "development")
         branch_name="${GITHUB_HEAD_REF##*/}"
         
         if [[ " ${disallowed_branches[@]} " =~ " $branch_name " ]]; then
@@ -27,10 +27,10 @@ jobs:
         
     - name: Check if PR is raised against allowed branches
       run: |
-        allowed_branches=("main" "master" "develop")
+        disallowed_branches=("main" "master" "develop" "development")
         pr_branch_name="${GITHUB_BASE_REF}"
         
-        if [[ " ${allowed_branches[@]} " =~ " $pr_branch_name " ]]; then
+        if [[ " ${disallowed_branches[@]} " =~ " $pr_branch_name " ]]; then
           echo "Pull request is raised against disallowed branch $pr_branch_name."
           exit 1
         else
