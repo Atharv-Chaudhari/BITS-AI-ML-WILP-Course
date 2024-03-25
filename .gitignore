@@ -1,0 +1,10 @@
+# Ignore everything
+*
+full_course/*
+
+# But not these files.
+!Atharv.svg
+!.github
+!README.md
+!LICENSE
+!.gitignore
