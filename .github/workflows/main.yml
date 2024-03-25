@@ -15,7 +15,7 @@ jobs:
       
     - name: Check if branch is allowed
       run: |
-        disallowed_branches=("main" "master" "develop" "Atharv" "dump_files_atharv" "development")
+        disallowed_branches=("main" "master" "develop" "Atharv" "dump_files_atharv" "development" "Production")
         branch_name="${GITHUB_HEAD_REF##*/}"
         
         if [[ " ${disallowed_branches[@]} " =~ " $branch_name " ]]; then
@@ -27,7 +27,7 @@ jobs:
         
     - name: Check if PR is raised against allowed branches
       run: |
-        disallowed_branches=("main" "master" "develop" "development")
+        disallowed_branches=("main" "master" "develop" "development" "Production")
         pr_branch_name="${GITHUB_BASE_REF}"
         
         if [[ " ${disallowed_branches[@]} " =~ " $pr_branch_name " ]]; then
