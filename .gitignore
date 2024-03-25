@@ -6,3 +6,4 @@ full_course
 run.bat
 deploy.bat
 git_notes.txt
+.gitignore
