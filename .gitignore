@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# But not these files.
+!full_course/public
+!full_course/src
+!full_course/package-lock.json
+!full_course/package.json
+!.gitignore
