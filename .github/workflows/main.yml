@@ -36,3 +36,9 @@ jobs:
         else
           echo "Pull request is raised against allowed branch $pr_branch_name."
         fi
+    - name: Find .gitignore files
+      run: |
+        if [ -n "$(git ls-files | grep '.gitignore')" ]; then
+          echo "ERROR: Pull request contains .gitignore file(s)."
+          exit 1
+        fi
