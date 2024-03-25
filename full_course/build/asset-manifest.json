@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/BITS-AI-ML-WILP-Course/static/css/main.f855e6bc.css",
+    "main.js": "/BITS-AI-ML-WILP-Course/static/js/main.6fd5e1c1.js",
+    "static/js/453.1bcdcea0.chunk.js": "/BITS-AI-ML-WILP-Course/static/js/453.1bcdcea0.chunk.js",
+    "index.html": "/BITS-AI-ML-WILP-Course/index.html",
+    "main.f855e6bc.css.map": "/BITS-AI-ML-WILP-Course/static/css/main.f855e6bc.css.map",
+    "main.6fd5e1c1.js.map": "/BITS-AI-ML-WILP-Course/static/js/main.6fd5e1c1.js.map",
+    "453.1bcdcea0.chunk.js.map": "/BITS-AI-ML-WILP-Course/static/js/453.1bcdcea0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.6fd5e1c1.js"
+  ]
+}
