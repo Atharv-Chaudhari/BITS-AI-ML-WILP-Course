@@ -1,5 +1,8 @@
+# Ignore everything
 *
 
+# But not these files.
 !Atharv.md
-!full_course
-!.gitignore
+!.github
+!README.md
+!LICENSE
