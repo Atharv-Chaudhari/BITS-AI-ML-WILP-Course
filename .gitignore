@@ -1,6 +1,9 @@
 # Ignore everything
 *
+full_course/build/*
+full_course/node_modules/*
 full_course/*
+
 
 # But not these files.
 !Atharv.svg
